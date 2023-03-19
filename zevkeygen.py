@@ -14,7 +14,7 @@ root = Tk()
 root.title("ZevKeyGen")
 root.resizable(False, False)
 root.geometry("300x300")
-main_l = Label(text="ZevKeyGen v1.0")
+main_l = Label(text="ZevKeyGen v1.0.1")
 main_l.pack()
 keys = {"Windows 10/11 Pro": "W269N-WFGWX-YVC9B-4J6C9-T83GX",
         "Windows 10/11 Pro N": "MH37W-N47XK-V7XM9-C7227-GCQG9",
@@ -57,7 +57,7 @@ default_l = Label(text="Default activation:")
 select_l = Label(text="Select windows edition:")
 win = StringVar(root)
 def activate_from_win():
-    os.system(f"slmgr/ipk {win.get()}")
+    os.system(f"slmgr/ipk {keys[win.get()]}")
     os.system("slmgr /skms kms.digiboy.ir")
     os.system("slmgr /ato")
 default_l.pack()
