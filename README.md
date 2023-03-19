@@ -1,5 +1,7 @@
 # zevkeygen
 Activates windows for free!
+# v1.0.1 update
+Fixed bug with default activation
 # Requirements
 Windows version must be one of them
 * Windows 11
